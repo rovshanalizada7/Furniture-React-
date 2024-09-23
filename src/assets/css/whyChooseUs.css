@@ -1,0 +1,85 @@
+.section2{
+    height: 826px;
+    width: 100%;
+    background-color:#eff2f1 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.section2-content{
+  height: 602px;
+  width: 1320px;
+  /* background-color: #6a6a6a; */
+  display: flex;
+  justify-content: space-between;
+}
+.section2-text{
+    height: 602px;
+    width: 660px;
+    /* background-color: #124534; */
+}
+.section2-img{
+    height: 602px;
+    width: 550px;
+    background-image: url('	https://themewagon.github.io/furni/images/why-choose-us-img.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+.title h2 {
+    color: #2f2f2f; 
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    box-sizing: border-box;
+}
+.title p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+    color: #6a6a6a;
+    font-size: 14px;
+}
+.my-5{
+    margin: 3rem 0;
+    width: 660px;
+    height: 329px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-md-6 {
+    width: 330px;
+    height: 164px;
+}
+.col-md-6 .icon {
+    position: relative;
+    margin-bottom: 20px;
+}
+h3{
+    font-size: 14px;
+    color: #2f2f2f;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.icon::before {
+    content: "";
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    background: rgba(59, 93, 80, 0.2);
+    border-radius: 50%;
+    left: 20px;
+    bottom: 2px;
+}
+
+.dots-image{
+    position: absolute;
+}

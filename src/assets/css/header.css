@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+header {
+    width: 100%;
+    height: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav {
+    width: 85%;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo a{
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+}
+.logo a span {
+    opacity: .4;
+}
+.lists{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 53%;
+}
+.lists ul {
+    display: flex;
+    align-items: center;
+    gap: 1.7rem;
+}
+.lists ul li a{
+  font-size: 14px;
+  padding: 8px;
+  font-weight: 500;
+  color: #ffffff;
+  opacity: .5;
+  font-family: "Inter", sans-serif;
+}
+.lists ul li{
+    position: relative;
+}
+
+.lists ul li:not(:first-child) a::before{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 8px;
+    right: 8px;
+    background: #f9bf29;
+    height: 5px;
+    opacity: 1;
+    visibility: visible;
+    width:0;
+}
+.lists ul li:not(:first-child) a:hover::before{
+ width: 80%;
+ animation: changeWidth 0.3s;
+}
+.lists ul li a:hover{
+    opacity: 1;
+}
+.lists ul li .homeList{
+    font-weight: 500;
+    color: #ffffff ;
+    opacity:1;
+    position: relative;
+}
+.lists ul li .homeList::before{
+    content: "";
+    position: absolute;
+    bottom:-3px;
+    left: 8px;
+    right: 8px;
+    background: #f9bf29;
+    height: 5px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.icons {
+    display: flex;
+    gap: 1.5rem;
+    margin-right: rem;
+}
+.icons img {
+    color: rgba(255, 255, 255, .55);
+    width: 20px;
+    height: 20px;
+    
+}
+
+@keyframes changeWidth {
+    from {
+      width: 0; 
+    }
+    to {
+      width: 80%; 
+    }
+  }

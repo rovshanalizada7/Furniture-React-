@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+section {
+    position: relative;
+    height: 616px;
+    width: 100%;
+    background-color: #3b5d50;;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-content {
+    width: 85%;
+    height: 520px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-text{
+    height: 290px;
+    width: 430px;
+    
+}
+.section-img{
+    height: 500px;
+    width: 760px;
+}
+.section-img img{
+    z-index: 2;
+    position: absolute;
+}
+h1 {
+    font-size: 54px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-family: "Inter", sans-serif;
+}
+.section-text p {
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 1.8rem !important;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+    font-size: 14px;
+}
+.btns .shopNow {
+    color: #2f2f2f;
+    background: #f9bf29;
+    border-color: #f9bf29;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 30px;
+    margin-right: .5rem !important;
+    cursor: pointer;
+    border: 1px solid transparent;
+    font-size: 1rem;
+}
+.btns .explore {
+    background: transparent;
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.3);
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: #ffffff;
+    line-height: 1.5;
+    cursor: pointer;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    font-size: 1rem;
+}
+.btns .explore:hover{
+    border-color: #fff;
+    transition: .5s;
+}
+
+.dots {
+    position: absolute;
+    right: 10px;
+    top: 9rem;
+    z-index: 1;
+}
