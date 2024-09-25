@@ -4,13 +4,13 @@ import "../css/whyChooseUs.css"
 const WhyChooseUs = () => {
   return (
     <>
-    <section class="section2">
+    <section className="section2">
 
-    <div class="row section2-content">
+    <div className="row section2-content">
 
-        <div class="col-lg-6 section2-text">
+        <div className="col-lg-6 section2-text">
 
-            <div class="title">
+            <div className="title">
                 <h2>Why Choose Us</h2>
                 <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
             </div>
@@ -56,11 +56,11 @@ const WhyChooseUs = () => {
 
         </div>
 
-        <div class="col-lg-5 section2-img"></div>
+        <div className="col-lg-5 section2-img"></div>
 
     </div>
 
-    <img className='dots-image' src="	https://themewagon.github.io/furni/images/dots-light.svg" alt="" />
+    <img className='dots-image' src="https://themewagon.github.io/furni/images/dots-yellow.svg" alt="" />
     </section>
     </>
   )

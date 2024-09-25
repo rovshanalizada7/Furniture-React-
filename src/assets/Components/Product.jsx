@@ -1,53 +1,82 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import axios from "axios"
 import "../css/product.css";
 
 
 const Product = () => {
+
+    const [data,setData] = useState([])
+
+    useEffect(() => {
+     getApi()
+    },[])
+
+    const getApi = () => {
+        axios.get('https://fakestoreapi.com/products')
+        .then(res => {
+           setData(res.data)
+        })
+    }
+
+
   return (
     <>
-      <section class="section1">
-        <div class="section-content">
-         <div class="row">
+      <section className="section1">
+        <div className="section-content">
+         <div className="row">
 
-            <div class="col-md-12 col-lg-3 mb-5 mb-lg-0">
+         {/* <div className="col-md-12 col-lg-3 mb-5 mb-lg-0">
                 <h2>Crafted with <br /> excellent material.</h2>
                 <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. </p>
                 <a href="">Explore</a>
-            </div>
+            </div> */}
 
-            <div class="col-md-12 col-lg-3 mb-5 mb-lg-0 card">
+           <div className="col-md-12 col-lg-3 mb-5 mb-lg-0 card">
             <div className='anime'>
                 <span>+</span>
                </div>
-                <div class="img">
+                <div className="img">
                     <img src="https://themewagon.github.io/furni/images/product-1.png" alt="" />
                 </div>
-                <h3 class="product-title">Nordic Chair</h3>
-                    <strong class="product-price">$50.00</strong>
+                <h3 className="product-title">Nordic Chair</h3>
+                    <strong className="product-price">$50.00</strong>
             </div>
 
-            <div class="col-md-12 col-lg-3 mb-5 mb-lg-0 card">
+            <div className="col-md-12 col-lg-3 mb-5 mb-lg-0 card">
                <div className='anime'>
                 <span>+</span>
                </div>
-                <div class="img">
+                <div className="img">
                     <img src="https://themewagon.github.io/furni/images/product-2.png" alt="" />
                 </div>
-                <h3 class="product-title">Kruzo Aero Chair</h3>
-                <strong class="product-price">$78.00</strong>
+                <h3 className="product-title">Kruzo Aero Chair</h3>
+                <strong className="product-price">$78.00</strong>
             </div>
 
-            <div class="col-md-12 col-lg-3 mb-5 mb-lg-0 card">
+            <div className="col-md-12 col-lg-3 mb-5 mb-lg-0 card">
             <div className='anime'>
                 <span>+</span>
                </div>
-                <div class="img">
+                <div className="img">
                     <img src="https://themewagon.github.io/furni/images/product-3.png" alt="" />
                 </div>
-                <h3 class="product-title">Ergonomic Chair</h3>
-                    <strong class="product-price">$43.00</strong>
+                <h3 className="product-title">Ergonomic Chair</h3>
+                    <strong className="product-price">$43.00</strong>
             </div>
+
             
+            {data.map((product,index) => (
+                <div key={index} className="col-md-12 col-lg-3 mb-5 mb-lg-0 card">
+                <div className='anime'>
+                <span>+</span>
+                </div>
+                <div className="img">
+                <img src={product.image} alt="" />
+                </div>
+                <h3 className="product-title">{product.title}</h3>
+                <strong className="product-price">${product.price}</strong>
+                </div>   
+            ))}  
             
          </div>
         </div>

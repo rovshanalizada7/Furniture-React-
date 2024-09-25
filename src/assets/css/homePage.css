@@ -86,3 +86,14 @@ h1 {
     top: 9rem;
     z-index: 1;
 }
+
+@media (max-width: 1300px) {
+    section{
+        height: auto;
+    }
+    .section-content{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+}

@@ -110,3 +110,9 @@ nav {
       width: 80%; 
     }
   }
+
+  @media (max-width: 1300px) {
+    .lists ul{
+        display: none;
+    }
+  }
