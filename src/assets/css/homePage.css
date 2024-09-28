@@ -117,3 +117,12 @@ h1 {
      top: 26rem;
     }
 }
+
+@media (max-width:600px) {
+    .section-text{
+      height: auto;
+    }
+    h1{
+        font-size: 30px;
+    }
+}

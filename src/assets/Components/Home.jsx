@@ -23,7 +23,6 @@ const Home = () => {
         </div>
         <img className='dots' src="https://themewagon.github.io/furni/images/dots-light.svg" alt="" />
      </div>
-        
     </section>
     <Product/>
     <WhyChooseUs/>
