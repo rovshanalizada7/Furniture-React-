@@ -1,6 +1,8 @@
 import React from 'react'
 import "../../assets/css/homePage.css"
 import Header from './Header'
+import Product from './Product'
+import WhyChooseUs from './whyChooseUs'
 
 const Home = () => {
   return (
@@ -23,6 +25,8 @@ const Home = () => {
      </div>
         
     </section>
+    <Product/>
+    <WhyChooseUs/>
    </>
   )
 }

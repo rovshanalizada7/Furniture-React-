@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from "axios"
 import "../css/product.css";
+import Card from './Card';
 
 
 const Product = () => {
@@ -25,12 +26,18 @@ const Product = () => {
         <div className="section-content">
          <div className="row">
 
+         {
+               data.map((item,index) => (
+                 <Card item={item} key={index}/>
+               ))
+         }  
+
          {/* <div className="col-md-12 col-lg-3 mb-5 mb-lg-0">
                 <h2>Crafted with <br /> excellent material.</h2>
                 <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. </p>
                 <a href="">Explore</a>
             </div> */}
-
+          {/* 
            <div className="col-md-12 col-lg-3 mb-5 mb-lg-0 card">
             <div className='anime'>
                 <span>+</span>
@@ -62,21 +69,8 @@ const Product = () => {
                 </div>
                 <h3 className="product-title">Ergonomic Chair</h3>
                     <strong className="product-price">$43.00</strong>
-            </div>
+            </div> */}
 
-            
-            {data.map((product,index) => (
-                <div key={index} className="col-md-12 col-lg-3 mb-5 mb-lg-0 card">
-                <div className='anime'>
-                <span>+</span>
-                </div>
-                <div className="img">
-                <img src={product.image} alt="" />
-                </div>
-                <h3 className="product-title">{product.title}</h3>
-                <strong className="product-price">${product.price}</strong>
-                </div>   
-            ))}  
             
          </div>
         </div>

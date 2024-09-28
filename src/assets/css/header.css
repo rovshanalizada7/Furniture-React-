@@ -115,4 +115,7 @@ nav {
     .lists ul{
         display: none;
     }
+    .lists {
+        justify-content: end;
+    }
   }
