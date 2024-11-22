@@ -11,7 +11,7 @@ const Detail = () => {
   const {id} = useParams();
   const [product , setProduct] = useState();
   const navigate = useNavigate();
-
+   
   const getApi = async () => {
     await axios.get('https://fakestoreapi.com/products')
     .then ( (res) => {
