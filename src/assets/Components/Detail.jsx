@@ -43,7 +43,7 @@ const Detail = () => {
         </div> 
         </>
       ) : (
-        <p>Loading...</p> // Add a loading state in case the product is null
+        <p>Loading...</p> 
       )
     }
    </div>
